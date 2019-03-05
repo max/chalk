@@ -19,3 +19,4 @@ action "after success" {
   uses = "actions/npm@master"
   runs = ["sh", "-c", "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"]
 }
+
